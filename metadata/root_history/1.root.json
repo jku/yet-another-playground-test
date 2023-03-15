@@ -1,0 +1,75 @@
+{
+ "signatures": [
+  {
+   "keyid": "da63eeba4841366b8968e2842cd5768933101593c0a59267a156ad6faf7af635",
+   "sig": "3045022100fa0689f2abbe2ecdf37730fee920ab625186134c5ecbbd5a56ff7ff93990711a02207cedc5444fa1ce3b25c22d05cc2edc56481c8fbe4fe8d65d63c82ffd4808e172"
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2024-03-14T14:48:42Z",
+  "keys": {
+   "abcd": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/jku/yet-another-playground-test/.github/workflows/snapshot.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-playground-online-uri": "sigstore:"
+   },
+   "da63eeba4841366b8968e2842cd5768933101593c0a59267a156ad6faf7af635": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEohqIdE+yTl4OxpX8ZxNUPrg3SL9H\nBDnhZuceKkxy2oMhUOxhWweZeG3bfM1T4ZLnJimC6CAYVU5+F5jZCoftRw==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-playground-keyowner": "@jku"
+   },
+   "efgh": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/jku/yet-another-playground-test/.github/workflows/version-bumps.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-playground-online-uri": "sigstore:"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "da63eeba4841366b8968e2842cd5768933101593c0a59267a156ad6faf7af635"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "abcd",
+     "efgh"
+    ],
+    "threshold": 1,
+    "x-playground-expiry-period": 365
+   },
+   "targets": {
+    "keyids": [
+     "da63eeba4841366b8968e2842cd5768933101593c0a59267a156ad6faf7af635"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "abcd",
+     "efgh"
+    ],
+    "threshold": 1,
+    "x-playground-expiry-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-playground-expiry-period": 365,
+  "x-playground-signing-period": 60
+ }
+}
