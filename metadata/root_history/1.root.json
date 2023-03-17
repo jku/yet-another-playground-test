@@ -1,9 +1,14 @@
 {
- "signatures": [],
+ "signatures": [
+  {
+   "keyid": "da63eeba4841366b8968e2842cd5768933101593c0a59267a156ad6faf7af635",
+   "sig": "3045022013f39c9b29c43599c8a7fceb17947c9f46a7daa8d8913002ef5e0f228c794831022100b2f916de09b837325ab021c8f85cb959d5893fb88497eff753460893976c25e5"
+  }
+ ],
  "signed": {
   "_type": "root",
   "consistent_snapshot": true,
-  "expires": "2024-03-16T06:50:00Z",
+  "expires": "2024-03-16T06:53:09Z",
   "keys": {
    "abcd": {
     "keytype": "sigstore-oidc",
@@ -13,6 +18,14 @@
     },
     "scheme": "Fulcio",
     "x-playground-online-uri": "sigstore:"
+   },
+   "da63eeba4841366b8968e2842cd5768933101593c0a59267a156ad6faf7af635": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEohqIdE+yTl4OxpX8ZxNUPrg3SL9H\nBDnhZuceKkxy2oMhUOxhWweZeG3bfM1T4ZLnJimC6CAYVU5+F5jZCoftRw==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-playground-keyowner": "@jku"
    },
    "efgh": {
     "keytype": "sigstore-oidc",
@@ -26,7 +39,9 @@
   },
   "roles": {
    "root": {
-    "keyids": [],
+    "keyids": [
+     "da63eeba4841366b8968e2842cd5768933101593c0a59267a156ad6faf7af635"
+    ],
     "threshold": 1
    },
    "snapshot": {
@@ -38,7 +53,9 @@
     "x-playground-expiry-period": 365
    },
    "targets": {
-    "keyids": [],
+    "keyids": [
+     "da63eeba4841366b8968e2842cd5768933101593c0a59267a156ad6faf7af635"
+    ],
     "threshold": 1
    },
    "timestamp": {
